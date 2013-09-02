@@ -9,14 +9,10 @@ override_dh_auto_clean:
 
 override_dh_auto_build:
 	dh_auto_build
-	set -ex; for python in $(shell py3versions -r); do \
-		$$python setup.py build; \
-	done
+	python2.7 setup.py build; \
 
 override_dh_auto_install:
 	dh_auto_install
-	set -ex; for python in $(shell py3versions -r); do \
-		$$python setup.py install --root=$(CURDIR)/debian/tmp --install-layout=deb; \
-	done
+	python2.7 setup.py install --root=$(CURDIR)/debian/tmp --install-layout=deb; \
 
 
