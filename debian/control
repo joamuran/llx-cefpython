@@ -1,0 +1,14 @@
+Source: llx-cefpython
+Section: python
+Priority: standard
+Maintainer: Equipo LliureX <lliurex@gva.es>
+Uploaders: Luis Antonio Garcia Gisbert <garcia_luigis@gva.es>, Angel Berlanas Vicente <aberlanas.gva@gmail.com>, Javier García Escribano <garcia_javesc@gva.es>, Raul Rodrigo Segura <raurodse.gva@gmail.com>, Alfons Lloret Sananton <alloret.gva@gmail.com>, Enrique Medina Gremaldos <lth.gva@gmail.com>, Hector Garcia Huerta <lliurex_devel1@edu.gva.es>, Ignacio Vidal Hurtado <vidal_joshur@gva.es>
+Build-Depends: debhelper (>= 8.0.0), python-support, python-central, python
+Standards-Version: 3.9.3
+
+Package: llx-cefpython
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, python, python-support (>= 0.90)
+Description:  CEF python for lliureX.
+ Cromium Embebed Browser python bindings.
+
